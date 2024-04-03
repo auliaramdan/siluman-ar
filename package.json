@@ -1,0 +1,22 @@
+{
+  "name": "product-xr",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.2.7"
+  },
+  "dependencies": {
+    "@flyskypie/dragonbones-threejs": "^0.2.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "three": "^0.148.0"
+  }
+}
