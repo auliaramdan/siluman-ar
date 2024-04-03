@@ -61,7 +61,7 @@ function init()
             chara.animation.play('Zeru_AR_Camera', 0)
             chara.scale.set(.0005, -.0005, .0005)
             //chara.position.z = -5
-            //chara.position.y = 0.4
+            chara.position.y = 0.4
 
             pointer.add(chara)
 
@@ -200,17 +200,16 @@ function onEndARSession()
 
 function onSelect()
 {
-    if(cube === undefined)
+    if(chara === undefined)
         return
 
     if(!pointer.visible)
         return
 
     pointerHitTestResult.createAnchor().then((anchor) => {
-        console.log(cube)
-        scene.attach(cube)
+        scene.attach(chara)
         anchoredObject.anchor = anchor
-        anchoredObject.object = cube
+        anchoredObject.object = chara
     }, (error) => {
         console.error("Could not create anchor: " + error);
     })
