@@ -5,9 +5,11 @@
     <title>3D Test</title>
 </head>
 <body>
+    <a id="place" style="display: block; position: fixed; bottom: 20%; width: 60px; height: 60px; left: calc(50% - 30px)">Redirect</a>
 
-    <ul id="feature-list" style="display: none; position: fixed; top: 50px; left: 10%">Feature List</ul>
-    <button id="place" style="display: none; position: fixed; bottom: 20%; width: 60px; height: 60px; left: calc(50% - 30px)">PLACE</button>
-    <script src="js/ar.js" type="module"></script>
+    <script type="module">
+        let link = document.getElementById('place')
+        link.href = `dragonbones/`
+    </script>
 </body>
 </html>

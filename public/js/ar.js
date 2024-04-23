@@ -12,9 +12,9 @@ let anchoredObject = {
 let xrViewerSpace, xrLocalSpace, xrHitTestSource
 let pointerHitTestResult, pointer, cube
 
-const skeJson = 'zeru/Sprite_Zeru_ske.json'
-const texJson = 'zeru/Sprite_Zeru_tex.json'
-const texPng = 'zeru/Sprite_Zeru_tex.png'
+const skeJson = '../res/zeru/Sprite_Zeru_ske.json'
+const texJson = '../res/zeru/Sprite_Zeru_tex.json'
+const texPng = '../res/zeru/Sprite_Zeru_tex.png'
 
 const requiredFeatures = [ 'hit-test', 'dom-overlay']
 const optionalFeatures = ['plane-detection', 'anchors']
